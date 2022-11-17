@@ -1,8 +1,6 @@
 from sklearn.base import BaseEstimator, TransformerMixin
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 largest_movie_companies = [
     'Warner Bros.',                             # Warner Bros. Entertainment
@@ -64,8 +62,6 @@ genres = [
     'Adventure',
     'Mystery'
 ]
-
-# failsafe eval
 
 
 def m_eval(x):

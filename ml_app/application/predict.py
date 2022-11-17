@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 
 import joblib
-from pipeline_functions import *
+import transformer_module
 
-# pipeline = joblib.load('models/pipeline.joblib')
+pipeline = joblib.load('models/pipeline.joblib')
 model = joblib.load('models/model.joblib')
 
 
