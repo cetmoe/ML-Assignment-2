@@ -12,3 +12,6 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+
+ml_app/application/__pycache__
+**/__pycache__
