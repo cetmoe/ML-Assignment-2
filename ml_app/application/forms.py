@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, FloatField, BooleanField, SubmitField
+from wtforms import StringField, IntegerField, DateTimeField, FloatField, BooleanField, SubmitField
 
 from wtforms.validators import DataRequired, Length, NumberRange, Optional
 
@@ -9,6 +9,7 @@ class DataForm(FlaskForm):
     belongs_to_collection = StringField(
         'Is the movie in a collection? if so which', validators=[Optional()])
     budget = IntegerField('Budget', validators=[DataRequired()])
+    popularity = FloatField('Popularity', validators=[DataRequired()])
     production_companies = StringField(
         'Production Companies (comma seperated)', validators=[Optional()])
     production_countries = StringField(
@@ -33,7 +34,7 @@ class DataForm(FlaskForm):
     romance = BooleanField('Romance')
     documentary = BooleanField('Documentary')
     comedy = BooleanField('Comedy')
-    tvMovie = BooleanField('TvMovie')
+    tvmovie = BooleanField('Tv Movie')
     war = BooleanField('War')
     animation = BooleanField('Animation')
     drama = BooleanField('Drama')

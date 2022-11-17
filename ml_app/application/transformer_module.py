@@ -103,7 +103,7 @@ def dictEncode(dataframe, column, key, categories, oneHot=True, destColumn=None)
 
 
 def containOrNot(df, columnName, addedName=''):
-    df[addedName+columnName] = df[columnName].notnull().astype('int')
+    df[addedName + columnName] = df[columnName].notnull().astype('int')
     if addedName != '':
         df.drop(columnName, inplace=True, axis=1)
 

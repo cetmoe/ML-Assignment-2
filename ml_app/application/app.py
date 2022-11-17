@@ -19,7 +19,7 @@ def index():
             session[fieldname] = value
 
         pred = predict(session)
-        session['prediction'] = pred
+        session['pred'] = pred
 
         return redirect(url_for('index'))
 
